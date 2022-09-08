@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../src/app/styles/reset';
+@import url('https://fonts.googleapis.com/css2?family=Telex&display=swap');
+html {
+    font-size: 10px;
+
+    body {
+        font-size: 1.6rem;
+        font-family: 'Telex', sans-serif;
+    }
+}
