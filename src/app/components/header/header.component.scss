@@ -16,46 +16,50 @@
             font-size: 2.4rem;
             white-space: nowrap;
            
+            &_link {
+                
+                &:hover {
+                    color: #c317af;
+                    transition: 0.3s;
+                }
+            }
         }
-        &_item:hover {
-            color: #c317af;
-            transition: 0.3s;
-        }
+        
     }
     &_actions {
         display: flex;
-
-        &_sign {
+        
+        .button {
             width: 14.3rem;
             height: 5.3rem;
             border-radius: 1.5rem;
             border: 0.1rem solid #000;
             font-size: 2.2rem;
-            background-color: transparent;
             cursor: pointer;
         }
-        &_sign:hover {
-            background-color: #9A9FE1;
-            transition: 0.5s;
-            border: 0.1rem solid #37316fd8;
-            color: #fff;
+
+        &_sign {           
+            background-color: transparent;
+            
+            &:hover {
+                background-color: #9A9FE1;
+                transition: 0.5s;
+                border: 0.1rem solid #37316fd8;
+                color: #fff;
+            }
         }
 
         &_login {
-            width: 14.3rem;
-            height: 5.3rem;
-            border-radius: 1.5rem;
             border: none;
             background-color: #000;
             color: #fff;
-            font-size: 2.2rem;
             margin-left: 4rem;
-            cursor: pointer;
-        }
-        &_login:hover {
-            background-color: #9A9FE1;
-            transition: 0.5s;
-            border: 0.1rem solid #37316fd8;
+
+            &:hover {
+                background-color: #9A9FE1;
+                transition: 0.5s;
+                border: 0.1rem solid #37316fd8;
+            }
         }
     }
 }
@@ -65,5 +69,4 @@
             display: none;
         }
     }
-    
 }

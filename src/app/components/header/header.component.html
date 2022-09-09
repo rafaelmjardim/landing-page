@@ -4,21 +4,26 @@
     </div>
 
     <ul class="header_menu">
-        <a routerLink="/home">
-            <li class="header_menu_item">How it works</li></a>
-        <a routerLink="/payments">
-            <li class="header_menu_item">Payment</li>
-        </a>
-        <a routerLink="/help">
-            <li class="header_menu_item">Help</li>
-        </a>
-        <a routerLink="/blog">
-            <li class="header_menu_item">Blog</li>
-        </a>
+            <li class="header_menu_item">
+                <a class="header_menu_item_link" routerLink="/home">How it works</a>
+            </li>
+            
+            <li class="header_menu_item">
+                <a class="header_menu_item_link"routerLink="/payments"> Payment</a>
+            </li>
+
+            <li class="header_menu_item">
+                <a class="header_menu_item_link" routerLink="/help">Help</a>
+            </li>
+
+            <li class="header_menu_item">
+                <a  class="header_menu_item_link"routerLink="/blog">Blog</a>
+            </li>
+
     </ul>
 
     <div class="header_actions">
-        <button class="header_actions_sign">Sign up</button>
-        <button class="header_actions_login">Log in</button>
+        <button routerLink="/signup" class="header_actions_sign button">Sign up</button>
+        <button class="header_actions_login button">Log in</button>
     </div>
 </div>

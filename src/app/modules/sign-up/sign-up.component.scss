@@ -1,0 +1,47 @@
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    
+    
+    &_box {
+        width: 70rem;
+        height: 80rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 1.3rem;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+        &_header {
+            padding: 4.5rem 0;
+            margin-bottom: 5.6rem ;
+            &_title {
+                font-size: 6.9rem;
+                color: #FF7F00;
+            }
+        }
+        &_main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &_button {
+                width: 20rem;
+                height: 5.8rem;
+                border-radius: 1.3rem;
+                border: none;
+                color: #fff;
+                background-color: #FF9933;
+                margin: 3.5rem;
+                cursor: pointer;
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
