@@ -3,18 +3,22 @@
     display: flex;
     align-items: center;
     height: 90vh;
+
     &_main {
+
         &_tittle {
             width: 56.4rem;
             font-size: 7.2rem;
             line-height: 8rem;
         }
+
         &_txt {
             width: 66.2rem;
             font-size: 2.4rem;
             margin-top: 3.4rem;
             color: #6C6C6C;
         }
+
         &_btn {
             margin-top: 9rem;
             width: 27.5rem;
@@ -25,23 +29,22 @@
             border-radius: 2.4rem;
             border: 5px solid #fff;
             box-shadow: 0px 20px 35px rgba(63, 26, 75, 0.14);
+            cursor: pointer;
+        }
+        &_btn:hover {
+            box-shadow: 0px 20px 35px rgba(156, 73, 183, 0.379);
+            transition: 0.5s;
         }
     }
+    
     &_img {
         min-width: 45rem;
     }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 780px) {
     .home {
-        &_main {
-            &_tittle {
-                font-size: 6rem;
-            }
-            &_txt {
-                font-size: 1.8rem;
-                width: 50rem;
-            }
-        }
+        flex-wrap: wrap;
+        
     }
     
 }

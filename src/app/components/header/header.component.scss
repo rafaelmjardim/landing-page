@@ -2,18 +2,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
     padding: 1rem 8rem;
+
+    &_logo img {
+        min-width: 12.5rem;
+     
+    }
 
     &_menu {
         display: flex;
         &_item {
             margin:30px;
             font-size: 2.4rem;
+            white-space: nowrap;
+           
+        }
+        &_item:hover {
+            color: #952cce;
+            transition: 0.3s;
         }
     }
     &_actions {
         display: flex;
+
         &_sign {
             width: 14.3rem;
             height: 5.3rem;
@@ -21,7 +32,15 @@
             border: 0.1rem solid #000;
             font-size: 2.2rem;
             background-color: transparent;
+            cursor: pointer;
         }
+        &_sign:hover {
+            background-color: #9A9FE1;
+            transition: 0.5s;
+            border: 0.1rem solid #37316fd8;
+            color: #fff;
+        }
+
         &_login {
             width: 14.3rem;
             height: 5.3rem;
@@ -31,15 +50,20 @@
             color: #fff;
             font-size: 2.2rem;
             margin-left: 4rem;
+            cursor: pointer;
+        }
+        &_login:hover {
+            background-color: #9A9FE1;
+            transition: 0.5s;
+            border: 0.1rem solid #37316fd8;
         }
     }
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 780px) {
     .header {
-        &_menu{
-            &_item {
-                font-size: 1.8rem;
-            }
+        &_menu {
+            display: none;
         }
     }
+    
 }
