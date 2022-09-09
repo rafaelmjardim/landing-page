@@ -34,10 +34,10 @@
             position: relative;
             transition: top ease 0.5s;
         }
+
         &_btn:hover {
             box-shadow: 0px 20px 35px rgba(156, 73, 183, 0.379);
             top: -8px;
-            // transition: 0.5s;
         }
     }
     
