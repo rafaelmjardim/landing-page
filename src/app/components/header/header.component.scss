@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 8rem;
+    padding: 0 8rem;
+    height: 10vh;
 
     &_logo img {
         min-width: 12.5rem;
@@ -13,40 +14,45 @@
         display: flex;
         &_item {
             margin:30px;
-            font-size: 2.4rem;
+            font-size: 2rem;
             white-space: nowrap;
            
             &_link {
                 
                 &:hover {
-                    color: #c317af;
-                    transition: 0.3s;
+                    background: linear-gradient(90deg, #e46bffda 9.28%, #4883f8e1 98.97%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    transition: background s linear;
                 }
             }
         }
-        
     }
     &_actions {
         display: flex;
         
         .button {
-            width: 14.3rem;
-            height: 5.3rem;
+            width: 11.5rem;
+            height: 4.5rem;
+            font-size: 2rem;
             border-radius: 1.5rem;
             border: 0.1rem solid #000;
-            font-size: 2.2rem;
             cursor: pointer;
+
+            &:hover {
+                // background-color: #c2a5f5;
+                background: linear-gradient(90deg, #ea8aff65 9.28%, #6291f084 98.97%);
+                transition: background 0.2s;
+                border: 0.1rem solid #ca93c3;
+                color: #303030;
+            }
         }
 
         &_sign {           
             background-color: transparent;
             
-            &:hover {
-                background-color: #9A9FE1;
-                transition: 0.5s;
-                border: 0.1rem solid #37316fd8;
-                color: #fff;
-            }
+           
         }
 
         &_login {
@@ -55,11 +61,7 @@
             color: #fff;
             margin-left: 4rem;
 
-            &:hover {
-                background-color: #9A9FE1;
-                transition: 0.5s;
-                border: 0.1rem solid #37316fd8;
-            }
+            
         }
     }
 }
