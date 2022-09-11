@@ -1,4 +1,17 @@
 .help {
     padding: 10rem;
     
+    &_header {
+        text-align: center;
+        
+        &_title {
+            font-size: 4rem;
+            margin: 3rem;
+            color: #353535;
+        }
+
+        &_search {
+            width: 400px;
+        }
+    }
 }

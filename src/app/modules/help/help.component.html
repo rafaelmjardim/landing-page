@@ -1,5 +1,47 @@
 <div class="help">
-    <mat-card-title>Popular questions</mat-card-title>
-    <mat-divider></mat-divider>
+   
+    <div class="help_header">
+        <h2 class="help_header_title">
+            How can we help you?
+        </h2>
+        <input class="help_header_search" type="search" name="search" id="search" placeholder="Write a question or problem">
+    </div>
+
+    <div class="help_main">
+       
+        <div class="help_main_questions">
+            <h2 class="help_main_questions_title">
+                Popular questions
+            </h2>
+            <mat-chip-list aria-label = "Questions">
+                <mat-chip> How to filter objetcs on the map?</mat-chip>
+                <mat-chip> How do i set the geometry of an object?</mat-chip>
+                <mat-chip>How to count the number of documents in the register?</mat-chip>
+                <mat-chip>How to upload data to the system?</mat-chip>
+                <mat-chip>How to draw a land plat on a map?</mat-chip>
+                <mat-chip>How to view expired services?</mat-chip>
+            </mat-chip-list>
+        </div>
+
+        <div class="help_main_category">
+            <mat-card class="help_main_category_card">
+                <mat-card-header>
+                    <mat-card-title>About the system</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <li class="help_main_category_card_item">System purpose</li>
+                    <li class="help_main_category_card_item">Interface</li>
+                    <li class="help_main_category_card_item">About data</li>
+                    <li class="help_main_category_card_item">Software and technical requirements</li>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+
+
+
+    <!-- <mat-card-title>Popular questions</mat-card-title>
+    <mat-divider></mat-divider> -->
 
 </div>

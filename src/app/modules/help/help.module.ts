@@ -7,6 +7,7 @@ import { HelpComponent } from './help.component';
 import { MatDividerModule } from '@angular/material/divider'
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
+import { MatChipsModule } from "@angular/material/chips";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MatCardModule } from "@angular/material/card";
     HelpRoutingModule,
     MatDividerModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatChipsModule
   ]
 })
 export class HelpModule { }
